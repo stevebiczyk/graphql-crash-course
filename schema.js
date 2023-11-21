@@ -17,7 +17,11 @@ type Author {
     verified: Boolean!
 }
 
-type Query {}
+type Query {
+    reviews: [Reviews]
+    games: [Game]
+    authors: [Author]
+}
 `;
 
 // int, float, string, boolean, ID
